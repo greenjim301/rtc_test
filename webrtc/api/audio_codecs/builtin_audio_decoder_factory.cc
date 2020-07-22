@@ -25,6 +25,7 @@
 #include "api/audio_codecs/opus/audio_decoder_multi_channel_opus.h"
 #include "api/audio_codecs/opus/audio_decoder_opus.h"  // nogncheck
 #endif
+#include "api/audio_codecs/opus/audio_decoder_opus.h"  // nogncheck
 
 namespace webrtc {
 
@@ -56,7 +57,7 @@ rtc::scoped_refptr<AudioDecoderFactory> CreateBuiltinAudioDecoderFactory() {
 #if WEBRTC_USE_BUILTIN_OPUS
       AudioDecoderOpus, NotAdvertised<AudioDecoderMultiChannelOpus>,
 #endif
-
+      AudioDecoderOpus,
      /* AudioDecoderIsac, AudioDecoderG722,*/
 
 #if WEBRTC_USE_BUILTIN_ILBC
