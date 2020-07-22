@@ -367,11 +367,113 @@
     <Filter Include="webrtc\api\audio_codecs\opus">
       <UniqueIdentifier>{8d549e0a-511e-4412-a041-f7d9b1a21792}</UniqueIdentifier>
     </Filter>
+    <Filter Include="webrtc\rtc_base\third_party\sigslot">
+      <UniqueIdentifier>{776f81e2-44f5-46b9-be5f-32cb9db7ff9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\test">
+      <UniqueIdentifier>{8d1d604b-da66-441d-bcf8-89d89ea7ab6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\modules\video_capture">
+      <UniqueIdentifier>{9aa320f0-cfea-4782-8cd0-b73ccb7593ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\modules\video_capture\windows">
+      <UniqueIdentifier>{95009dad-0087-4f55-8a58-d9ae465b12ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl">
+      <UniqueIdentifier>{f5c04b0d-de7f-4357-857b-e48baa7965c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\algorithm">
+      <UniqueIdentifier>{4ca6437a-9096-439b-9000-3ee85e200867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\base">
+      <UniqueIdentifier>{0800596e-8570-4767-901e-acd2fc4f8863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\base\internal">
+      <UniqueIdentifier>{083e3f74-d040-4355-a7f4-0de2026e7ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\container">
+      <UniqueIdentifier>{a93d0bf1-222f-478b-9277-e1b4263b0262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\container\internal">
+      <UniqueIdentifier>{d434ea8c-4cc5-4b88-8729-eaff2418ad6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\flags">
+      <UniqueIdentifier>{df170730-fde4-4664-9485-a74f91f2c6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\flags\internal">
+      <UniqueIdentifier>{c36be908-cd16-4008-87dd-91d1a70556fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\functional">
+      <UniqueIdentifier>{109e8239-4eba-4279-a1ef-22f9d5322825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\functional\internal">
+      <UniqueIdentifier>{5bd3ccfe-fc5c-45cb-9cbc-95a2acc8921b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\hash">
+      <UniqueIdentifier>{154c36c1-09d7-418a-8476-e33ca517e0b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\hash\internal">
+      <UniqueIdentifier>{7500256b-2846-451e-903c-b0ebaca2d2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\random">
+      <UniqueIdentifier>{792945eb-cffb-491f-a991-249a32db1b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\random\internal">
+      <UniqueIdentifier>{11548061-a0b1-4f4d-9fdd-af5437cb0e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\status">
+      <UniqueIdentifier>{c2f5864f-47ae-4b50-ae26-33ab895ee725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\strings">
+      <UniqueIdentifier>{26f5fa1d-e16d-49b6-8738-c3a2b5199bf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\strings\internal">
+      <UniqueIdentifier>{5e5fd704-8145-4edf-bb4e-2958944cb74a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\strings\internal\str_format">
+      <UniqueIdentifier>{e11f69a2-4908-41e6-8c9f-824f3fccd5de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\synchronization">
+      <UniqueIdentifier>{15fd352c-081e-483d-8afa-cfe168365b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\synchronization\internal">
+      <UniqueIdentifier>{e1f8a717-32b1-473e-8a90-66a5408a19ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\time">
+      <UniqueIdentifier>{6277710c-55df-4203-a60d-3155d2bb636f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\time\internal">
+      <UniqueIdentifier>{8a1f101e-f192-449d-9397-29412e910fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\time\internal\cctz">
+      <UniqueIdentifier>{a8bfe795-ea72-48d9-99a7-6b199a63d865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\time\internal\cctz\include">
+      <UniqueIdentifier>{d4c7f9bf-931e-4179-8b03-4bf3d10899cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\time\internal\cctz\src">
+      <UniqueIdentifier>{bf2dc449-1994-4f82-aae2-999355644e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\time\internal\cctz\include\cctz">
+      <UniqueIdentifier>{c86edc29-a0b0-4d24-9886-a87fb3f19e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\types">
+      <UniqueIdentifier>{cb69ff2a-bc5a-4ef2-9515-bbcea08b176a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\types\internal">
+      <UniqueIdentifier>{13601e51-e88e-4f77-bfcd-1ad1f214a07a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\debugging">
+      <UniqueIdentifier>{d83896b7-f735-494c-8ae8-0789ece3f7cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\debugging\internal">
+      <UniqueIdentifier>{0ebfe66b-91ec-4c52-9fab-dbbd405c65ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\absl\numeric">
+      <UniqueIdentifier>{bcda3f36-73b1-4439-a2f3-f13e35bcf038}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="rtc_test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="webrtc\rtc_base\task_queue.cc">
       <Filter>webrtc\rtc_base</Filter>
     </ClCompile>
@@ -3203,6 +3305,387 @@
     </ClCompile>
     <ClCompile Include="webrtc\api\audio_codecs\opus_audio_encoder_factory.cc">
       <Filter>webrtc\api\audio_codecs</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\rtc_base\third_party\sigslot\sigslot.cc">
+      <Filter>webrtc\rtc_base\third_party\sigslot</Filter>
+    </ClCompile>
+    <ClCompile Include="peer_connection_client.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="defaults.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="conductor.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main_wnd.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\test\vcm_capturer.cc">
+      <Filter>webrtc\test</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\test\test_video_capturer.cc">
+      <Filter>webrtc\test</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\rtc_base\strings\json.cc">
+      <Filter>webrtc\rtc_base\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\jsoncpp.cpp">
+      <Filter>webrtc</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\device_info_impl.cc">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\video_capture_factory.cc">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\video_capture_impl.cc">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\windows\device_info_ds.cc">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\windows\help_functions_ds.cc">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\windows\sink_filter_ds.cc">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\windows\video_capture_ds.cc">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\video_capture\windows\video_capture_factory_windows.cc">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\test\field_trial.cc">
+      <Filter>webrtc\test</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\dynamic_annotations.cc">
+      <Filter>webrtc\absl\base</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\log_severity.cc">
+      <Filter>webrtc\absl\base</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\cycleclock.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\exponential_biased.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\low_level_alloc.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\periodic_sampler.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\raw_logging.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\scoped_set_env.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\spinlock.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\spinlock_wait.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\strerror.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\sysinfo.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\thread_identity.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\throw_delegate.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\base\internal\unscaledcycleclock.cc">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\commandlineflag.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\flag.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\marshalling.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\parse.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\reflection.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\usage.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\usage_config.cc">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\internal\commandlineflag.cc">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\internal\flag.cc">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\internal\private_handle_accessor.cc">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\internal\program_name.cc">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\flags\internal\usage.cc">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\container\internal\hashtablez_sampler.cc">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\container\internal\raw_hash_set.cc">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\hash\internal\city.cc">
+      <Filter>webrtc\absl\hash\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\hash\internal\hash.cc">
+      <Filter>webrtc\absl\hash\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\discrete_distribution.cc">
+      <Filter>webrtc\absl\random</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\gaussian_distribution.cc">
+      <Filter>webrtc\absl\random</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\seed_gen_exception.cc">
+      <Filter>webrtc\absl\random</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\seed_sequences.cc">
+      <Filter>webrtc\absl\random</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\pool_urbg.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\randen.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\randen_detect.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\randen_hwaes.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\randen_round_keys.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\randen_slow.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\seed_material.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\chi_square.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\status\status.cc">
+      <Filter>webrtc\absl\status</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\status\status_payload_printer.cc">
+      <Filter>webrtc\absl\status</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\ascii.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\charconv.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\cord.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\escaping.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\match.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\numbers.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\str_cat.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\str_replace.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\str_split.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\string_view.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\substitute.cc">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\charconv_bigint.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\charconv_parse.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\escaping.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\memutil.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\ostringstream.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\pow10_helper.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\utf8.cc">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\str_format\arg.cc">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\str_format\bind.cc">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\str_format\extension.cc">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\str_format\float_conversion.cc">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\str_format\output.cc">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\strings\internal\str_format\parser.cc">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\barrier.cc">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\blocking_counter.cc">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\mutex.cc">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\notification.cc">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\internal\create_thread_identity.cc">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\internal\graphcycles.cc">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\internal\per_thread_sem.cc">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\synchronization\internal\waiter.cc">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\civil_time.cc">
+      <Filter>webrtc\absl\time</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\clock.cc">
+      <Filter>webrtc\absl\time</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\duration.cc">
+      <Filter>webrtc\absl\time</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\format.cc">
+      <Filter>webrtc\absl\time</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\time.cc">
+      <Filter>webrtc\absl\time</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\civil_time_detail.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_fixed.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_format.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_impl.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_lookup.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\zone_info_source.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\types\bad_any_cast.cc">
+      <Filter>webrtc\absl\types</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\types\bad_optional_access.cc">
+      <Filter>webrtc\absl\types</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\types\bad_variant_access.cc">
+      <Filter>webrtc\absl\types</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\random\internal\distribution_test_util.cc">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\failure_signal_handler.cc">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\leak_check.cc">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\leak_check_disable.cc">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\stacktrace.cc">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\symbolize.cc">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\internal\address_is_readable.cc">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\internal\demangle.cc">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\internal\examine_stack.cc">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\internal\stack_consumption.cc">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\debugging\internal\vdso_support.cc">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\numeric\int128.cc">
+      <Filter>webrtc\absl\numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_if.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_libc.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_info.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_posix.cc">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -6572,6 +7055,750 @@
     <ClInclude Include="webrtc\api\audio_codecs\opus_audio_encoder_factory.h">
       <Filter>webrtc\api\audio_codecs</Filter>
     </ClInclude>
+    <ClInclude Include="webrtc\rtc_base\third_party\sigslot\sigslot.h">
+      <Filter>webrtc\rtc_base\third_party\sigslot</Filter>
+    </ClInclude>
+    <ClInclude Include="peer_connection_client.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="defaults.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="conductor.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main_wnd.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\test\vcm_capturer.h">
+      <Filter>webrtc\test</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\test\test_video_capturer.h">
+      <Filter>webrtc\test</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\rtc_base\strings\json.h">
+      <Filter>webrtc\rtc_base\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\device_info_impl.h">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\video_capture.h">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\video_capture_config.h">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\video_capture_defines.h">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\video_capture_factory.h">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\video_capture_impl.h">
+      <Filter>webrtc\modules\video_capture</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\windows\device_info_ds.h">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\windows\help_functions_ds.h">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\windows\sink_filter_ds.h">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\video_capture\windows\video_capture_ds.h">
+      <Filter>webrtc\modules\video_capture\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="flag_defs.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\test\field_trial.h">
+      <Filter>webrtc\test</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\algorithm\algorithm.h">
+      <Filter>webrtc\absl\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\algorithm\container.h">
+      <Filter>webrtc\absl\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\attributes.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\call_once.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\casts.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\config.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\const_init.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\dynamic_annotations.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\log_severity.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\macros.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\optimization.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\options.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\policy_checks.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\port.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\thread_annotations.h">
+      <Filter>webrtc\absl\base</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\atomic_hook.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\bits.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\cycleclock.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\direct_mmap.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\dynamic_annotations.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\endian.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\errno_saver.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\exponential_biased.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\fast_type_id.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\hide_ptr.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\identity.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\inline_variable.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\invoke.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\low_level_alloc.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\low_level_scheduling.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\per_thread_tls.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\periodic_sampler.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\pretty_function.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\raw_logging.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\scheduling_mode.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\scoped_set_env.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\spinlock.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\spinlock_wait.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\strerror.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\sysinfo.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\thread_annotations.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\thread_identity.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\throw_delegate.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\tsan_mutex_interface.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\unaligned_access.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\base\internal\unscaledcycleclock.h">
+      <Filter>webrtc\absl\base\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\commandlineflag.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\config.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\declare.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\flag.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\marshalling.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\parse.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\reflection.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\usage.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\usage_config.h">
+      <Filter>webrtc\absl\flags</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\commandlineflag.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\flag.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\parse.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\path_util.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\private_handle_accessor.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\program_name.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\registry.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\flags\internal\usage.h">
+      <Filter>webrtc\absl\flags\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\btree_map.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\btree_set.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\fixed_array.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\flat_hash_map.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\flat_hash_set.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\inlined_vector.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\node_hash_map.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\node_hash_set.h">
+      <Filter>webrtc\absl\container</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\btree_container.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\common.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\compressed_tuple.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\container_memory.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\counting_allocator.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\hash_function_defaults.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\hash_policy_traits.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\hashtable_debug.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\hashtable_debug_hooks.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\hashtablez_sampler.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\have_sse.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\inlined_vector.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\layout.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\node_hash_policy.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\raw_hash_map.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\raw_hash_set.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\tracked.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\container\internal\btree.h">
+      <Filter>webrtc\absl\container\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\functional\bind_front.h">
+      <Filter>webrtc\absl\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\functional\function_ref.h">
+      <Filter>webrtc\absl\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\functional\internal\front_binder.h">
+      <Filter>webrtc\absl\functional\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\functional\internal\function_ref.h">
+      <Filter>webrtc\absl\functional\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\hash\hash.h">
+      <Filter>webrtc\absl\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\hash\internal\city.h">
+      <Filter>webrtc\absl\hash\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\hash\internal\hash.h">
+      <Filter>webrtc\absl\hash\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\hash\internal\spy_hash_state.h">
+      <Filter>webrtc\absl\hash\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\bernoulli_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\beta_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\bit_gen_ref.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\discrete_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\distributions.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\exponential_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\gaussian_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\log_uniform_int_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\mock_distributions.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\mocking_bit_gen.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\poisson_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\random.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\seed_gen_exception.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\seed_sequences.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\uniform_int_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\uniform_real_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\zipf_distribution.h">
+      <Filter>webrtc\absl\random</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\platform.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\pool_urbg.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\randen.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\randen_detect.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\randen_engine.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\randen_hwaes.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\randen_slow.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\randen_traits.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\salted_seed_seq.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\seed_material.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\sequence_urbg.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\traits.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\uniform_helper.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\wide_multiply.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\chi_square.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\distribution_caller.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\explicit_seed_seq.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\fast_uniform_bits.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\fastmath.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\generate_real.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\iostream_state_saver.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\mock_helpers.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\mock_overload_set.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\nonsecure_base.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\pcg_engine.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\status\status.h">
+      <Filter>webrtc\absl\status</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\status\status_payload_printer.h">
+      <Filter>webrtc\absl\status</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\ascii.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\charconv.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\cord.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\escaping.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\match.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\numbers.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\str_cat.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\str_format.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\str_join.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\str_replace.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\str_split.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\string_view.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\strip.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\substitute.h">
+      <Filter>webrtc\absl\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\char_map.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\charconv_bigint.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\charconv_parse.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\cord_internal.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\escaping.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\memutil.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\ostringstream.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\pow10_helper.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\resize_uninitialized.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\stl_type_traits.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_join_internal.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_split_internal.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\utf8.h">
+      <Filter>webrtc\absl\strings\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\arg.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\bind.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\checker.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\extension.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\float_conversion.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\output.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\strings\internal\str_format\parser.h">
+      <Filter>webrtc\absl\strings\internal\str_format</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\barrier.h">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\blocking_counter.h">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\mutex.h">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\notification.h">
+      <Filter>webrtc\absl\synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\internal\create_thread_identity.h">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\internal\graphcycles.h">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\internal\kernel_timeout.h">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\internal\per_thread_sem.h">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\internal\thread_pool.h">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\synchronization\internal\waiter.h">
+      <Filter>webrtc\absl\synchronization\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\civil_time.h">
+      <Filter>webrtc\absl\time</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\clock.h">
+      <Filter>webrtc\absl\time</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\time.h">
+      <Filter>webrtc\absl\time</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_fixed.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_impl.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\tzfile.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\include\cctz\civil_time.h">
+      <Filter>webrtc\absl\time\internal\cctz\include\cctz</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\include\cctz\civil_time_detail.h">
+      <Filter>webrtc\absl\time\internal\cctz\include\cctz</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\include\cctz\time_zone.h">
+      <Filter>webrtc\absl\time\internal\cctz\include\cctz</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\include\cctz\zone_info_source.h">
+      <Filter>webrtc\absl\time\internal\cctz\include\cctz</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\any.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\bad_any_cast.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\bad_optional_access.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\bad_variant_access.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\compare.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\optional.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\span.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\variant.h">
+      <Filter>webrtc\absl\types</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\conformance_aliases.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\conformance_archetype.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\conformance_profile.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\optional.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\parentheses.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\span.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\transform_args.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\types\internal\variant.h">
+      <Filter>webrtc\absl\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\random\internal\distribution_test_util.h">
+      <Filter>webrtc\absl\random\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\failure_signal_handler.h">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\leak_check.h">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\stacktrace.h">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\symbolize.h">
+      <Filter>webrtc\absl\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\address_is_readable.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\demangle.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\examine_stack.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\stack_consumption.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\stacktrace_config.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\symbolize.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\debugging\internal\vdso_support.h">
+      <Filter>webrtc\absl\debugging\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\numeric\int128.h">
+      <Filter>webrtc\absl\numeric</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_if.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_libc.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_info.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_posix.h">
+      <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="webrtc\rtc_base\callback.h.pump">
@@ -6582,6 +7809,15 @@
     </None>
     <None Include="webrtc\modules\audio_processing\aec3\BUILD.gn">
       <Filter>webrtc\modules\audio_processing\aec3</Filter>
+    </None>
+    <None Include="webrtc\absl\time\internal\get_current_time_chrono.inc">
+      <Filter>webrtc\absl\time\internal</Filter>
+    </None>
+    <None Include="webrtc\absl\time\internal\get_current_time_posix.inc">
+      <Filter>webrtc\absl\time\internal</Filter>
+    </None>
+    <None Include="webrtc\absl\time\internal\zoneinfo.inc">
+      <Filter>webrtc\absl\time\internal</Filter>
     </None>
   </ItemGroup>
 </Project>

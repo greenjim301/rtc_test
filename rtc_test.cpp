@@ -3,17 +3,17 @@
 
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
-
-    int i = 0;
-    ++i;
-
-    std::cout << i << std::endl;
-
-    return 0;
-}
+// int main()
+// {
+//     std::cout << "Hello World!\n";
+// 
+//     int i = 0;
+//     ++i;
+// 
+//     std::cout << i << std::endl;
+// 
+//     return 0;
+// }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
 // 调试程序: F5 或调试 >“开始调试”菜单
