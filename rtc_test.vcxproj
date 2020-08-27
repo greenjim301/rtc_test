@@ -114,7 +114,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;WEBRTC_WIN;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WEBRTC_USE_H264;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;WEBRTC_WIN;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;WEBRTC_USE_H264;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)webrtc;C:\Program Files\OpenSSL\include;$(SolutionDir)webrtc\third_party\libyuv\include;$(SolutionDir)webrtc\third_party\libsrtp\include;C:\Program Files (x86)\Opus\include\opus;$(SolutionDir)webrtc\third_party\ffmpeg</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
@@ -122,7 +122,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;Winmm.lib;Iphlpapi.lib;Secur32.lib;libcrypto.lib;libssl.lib;yuv.lib;srtp2.lib;opus.lib;avcodec.lib;avutil.lib;libopenh264.lib;Strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;Winmm.lib;Iphlpapi.lib;Secur32.lib;libcrypto.lib;libssl.lib;yuv.lib;srtp2.lib;opus.lib;avcodec.lib;avutil.lib;libopenh264.lib;Strmiids.lib;Msdmo.lib;dmoguids.lib;wmcodecdspuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Program Files\OpenSSL\lib;C:\Program Files (x86)\YUV\lib;C:\Program Files (x86)\libsrtp2\lib;C:\Program Files (x86)\Opus\lib;$(SolutionDir)webrtc\third_party\ffmpeg\lib;$(SolutionDir)webrtc\third_party\openh264\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -605,6 +605,19 @@
     <ClCompile Include="webrtc\modules\audio_coding\neteq\sync_buffer.cc" />
     <ClCompile Include="webrtc\modules\audio_coding\neteq\timestamp_scaler.cc" />
     <ClCompile Include="webrtc\modules\audio_coding\neteq\time_stretch.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_buffer.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_data_observer.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_generic.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_impl.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_name.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\fine_audio_buffer.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\include\audio_device_factory.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\win\audio_device_core_win.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\win\audio_device_module_win.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_base_win.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_input_win.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_output_win.cc" />
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_utility_win.cc" />
     <ClCompile Include="webrtc\modules\audio_mixer\audio_frame_manipulator.cc" />
     <ClCompile Include="webrtc\modules\audio_mixer\audio_mixer_impl.cc" />
     <ClCompile Include="webrtc\modules\audio_mixer\default_output_rate_calculator.cc" />
@@ -1158,6 +1171,7 @@
     <ClCompile Include="webrtc\rtc_base\win32.cc" />
     <ClCompile Include="webrtc\rtc_base\win32_socket_server.cc" />
     <ClCompile Include="webrtc\rtc_base\win32_window.cc" />
+    <ClCompile Include="webrtc\rtc_base\win\windows_version.cc" />
     <ClCompile Include="webrtc\rtc_base\zero_memory.cc" />
     <ClCompile Include="webrtc\stats\rtcstats_objects.cc" />
     <ClCompile Include="webrtc\stats\rtc_stats.cc" />
@@ -1843,6 +1857,23 @@
     <ClInclude Include="webrtc\modules\audio_coding\neteq\sync_buffer.h" />
     <ClInclude Include="webrtc\modules\audio_coding\neteq\timestamp_scaler.h" />
     <ClInclude Include="webrtc\modules\audio_coding\neteq\time_stretch.h" />
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_buffer.h" />
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_config.h" />
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_generic.h" />
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_impl.h" />
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_name.h" />
+    <ClInclude Include="webrtc\modules\audio_device\fine_audio_buffer.h" />
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device.h" />
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_data_observer.h" />
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_default.h" />
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_defines.h" />
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_factory.h" />
+    <ClInclude Include="webrtc\modules\audio_device\win\audio_device_core_win.h" />
+    <ClInclude Include="webrtc\modules\audio_device\win\audio_device_module_win.h" />
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_base_win.h" />
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_input_win.h" />
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_output_win.h" />
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_utility_win.h" />
     <ClInclude Include="webrtc\modules\audio_mixer\audio_frame_manipulator.h" />
     <ClInclude Include="webrtc\modules\audio_mixer\audio_mixer_impl.h" />
     <ClInclude Include="webrtc\modules\audio_mixer\default_output_rate_calculator.h" />
@@ -2538,6 +2569,7 @@
     <ClInclude Include="webrtc\rtc_base\win32_socket_init.h" />
     <ClInclude Include="webrtc\rtc_base\win32_socket_server.h" />
     <ClInclude Include="webrtc\rtc_base\win32_window.h" />
+    <ClInclude Include="webrtc\rtc_base\win\windows_version.h" />
     <ClInclude Include="webrtc\rtc_base\zero_memory.h" />
     <ClInclude Include="webrtc\test\field_trial.h" />
     <ClInclude Include="webrtc\test\test_video_capturer.h" />

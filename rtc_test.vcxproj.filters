@@ -472,6 +472,18 @@
     <Filter Include="webrtc\absl\numeric">
       <UniqueIdentifier>{bcda3f36-73b1-4439-a2f3-f13e35bcf038}</UniqueIdentifier>
     </Filter>
+    <Filter Include="webrtc\modules\audio_device">
+      <UniqueIdentifier>{1dddaa0c-4148-4682-ad08-65210a7d78e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\modules\audio_device\include">
+      <UniqueIdentifier>{5d303e5b-dfda-46b2-994b-57f1bc54f255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\modules\audio_device\win">
+      <UniqueIdentifier>{5344dbc3-2478-4557-ab6b-87404630586b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webrtc\rtc_base\win">
+      <UniqueIdentifier>{3b2c8885-d991-4a99-88a1-945bbb607b07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="webrtc\rtc_base\task_queue.cc">
@@ -3686,6 +3698,48 @@
     </ClCompile>
     <ClCompile Include="webrtc\absl\time\internal\cctz\src\time_zone_posix.cc">
       <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\include\audio_device_factory.cc">
+      <Filter>webrtc\modules\audio_device\include</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\win\audio_device_core_win.cc">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\win\audio_device_module_win.cc">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_base_win.cc">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_input_win.cc">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_output_win.cc">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\win\core_audio_utility_win.cc">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_buffer.cc">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_data_observer.cc">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_generic.cc">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_impl.cc">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\audio_device_name.cc">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\modules\audio_device\fine_audio_buffer.cc">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClCompile>
+    <ClCompile Include="webrtc\rtc_base\win\windows_version.cc">
+      <Filter>webrtc\rtc_base\win</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -7798,6 +7852,60 @@
     </ClInclude>
     <ClInclude Include="webrtc\absl\time\internal\cctz\src\time_zone_posix.h">
       <Filter>webrtc\absl\time\internal\cctz\src</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device.h">
+      <Filter>webrtc\modules\audio_device\include</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_data_observer.h">
+      <Filter>webrtc\modules\audio_device\include</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_default.h">
+      <Filter>webrtc\modules\audio_device\include</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_defines.h">
+      <Filter>webrtc\modules\audio_device\include</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\include\audio_device_factory.h">
+      <Filter>webrtc\modules\audio_device\include</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\win\audio_device_core_win.h">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\win\audio_device_module_win.h">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_base_win.h">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_input_win.h">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_output_win.h">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\win\core_audio_utility_win.h">
+      <Filter>webrtc\modules\audio_device\win</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_buffer.h">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_config.h">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_generic.h">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_impl.h">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\audio_device_name.h">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\modules\audio_device\fine_audio_buffer.h">
+      <Filter>webrtc\modules\audio_device</Filter>
+    </ClInclude>
+    <ClInclude Include="webrtc\rtc_base\win\windows_version.h">
+      <Filter>webrtc\rtc_base\win</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

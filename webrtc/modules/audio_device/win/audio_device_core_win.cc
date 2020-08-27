@@ -793,6 +793,7 @@ int32_t AudioDeviceWindowsCore::SpeakerVolumeIsAvailable(bool& available) {
   HRESULT hr = S_OK;
   IAudioSessionManager* pManager = NULL;
   ISimpleAudioVolume* pVolume = NULL;
+  float volume(0.0f);
 
   hr = _ptrDeviceOut->Activate(__uuidof(IAudioSessionManager), CLSCTX_ALL, NULL,
                                (void**)&pManager);
@@ -801,7 +802,6 @@ int32_t AudioDeviceWindowsCore::SpeakerVolumeIsAvailable(bool& available) {
   hr = pManager->GetSimpleAudioVolume(NULL, FALSE, &pVolume);
   EXIT_ON_ERROR(hr);
 
-  float volume(0.0f);
   hr = pVolume->GetMasterVolume(&volume);
   if (FAILED(hr)) {
     available = false;
@@ -979,13 +979,13 @@ int32_t AudioDeviceWindowsCore::SetSpeakerMute(bool enable) {
 
   HRESULT hr = S_OK;
   IAudioEndpointVolume* pVolume = NULL;
+  const BOOL mute(enable);
 
   // Set the speaker system mute state.
   hr = _ptrDeviceOut->Activate(__uuidof(IAudioEndpointVolume), CLSCTX_ALL, NULL,
                                reinterpret_cast<void**>(&pVolume));
   EXIT_ON_ERROR(hr);
 
-  const BOOL mute(enable);
   hr = pVolume->SetMute(mute, NULL);
   EXIT_ON_ERROR(hr);
 
@@ -1086,13 +1086,13 @@ int32_t AudioDeviceWindowsCore::SetMicrophoneMute(bool enable) {
 
   HRESULT hr = S_OK;
   IAudioEndpointVolume* pVolume = NULL;
+  const BOOL mute(enable);
 
   // Set the microphone system mute state.
   hr = _ptrDeviceIn->Activate(__uuidof(IAudioEndpointVolume), CLSCTX_ALL, NULL,
                               reinterpret_cast<void**>(&pVolume));
   EXIT_ON_ERROR(hr);
 
-  const BOOL mute(enable);
   hr = pVolume->SetMute(mute, NULL);
   EXIT_ON_ERROR(hr);
 
@@ -1234,12 +1234,12 @@ int32_t AudioDeviceWindowsCore::MicrophoneVolumeIsAvailable(bool& available) {
 
   HRESULT hr = S_OK;
   IAudioEndpointVolume* pVolume = NULL;
+  float volume(0.0f);
 
   hr = _ptrDeviceIn->Activate(__uuidof(IAudioEndpointVolume), CLSCTX_ALL, NULL,
                               reinterpret_cast<void**>(&pVolume));
   EXIT_ON_ERROR(hr);
 
-  float volume(0.0f);
   hr = pVolume->GetMasterVolumeLevelScalar(&volume);
   if (FAILED(hr)) {
     available = false;
@@ -1821,6 +1821,10 @@ int32_t AudioDeviceWindowsCore::InitPlayout() {
   WAVEFORMATEX* pWfxOut = NULL;
   WAVEFORMATEX Wfx = WAVEFORMATEX();
   WAVEFORMATEX* pWfxClosestMatch = NULL;
+  UINT bufferFrameCount(0);
+  REFERENCE_TIME hnsBufferDuration =
+	  0;  // ask for minimum buffer size (default)
+  const int freqs[] = { 48000, 44100, 16000, 96000, 32000, 8000 };
 
   // Create COM object with IAudioClient interface.
   SAFE_RELEASE(_ptrClientOut);
@@ -1855,7 +1859,6 @@ int32_t AudioDeviceWindowsCore::InitPlayout() {
   Wfx.wBitsPerSample = 16;
   Wfx.cbSize = 0;
 
-  const int freqs[] = {48000, 44100, 16000, 96000, 32000, 8000};
   hr = S_FALSE;
 
   // Iterate over frequencies and channels, in order of priority
@@ -1941,8 +1944,6 @@ int32_t AudioDeviceWindowsCore::InitPlayout() {
   // buffer.
   // ****************************************************************************
   //
-  REFERENCE_TIME hnsBufferDuration =
-      0;  // ask for minimum buffer size (default)
   if (_devicePlaySampleRate == 44100) {
     // Ask for a larger buffer size (30ms) when using 44.1kHz as render rate.
     // There seems to be a larger risk of underruns for 44.1 compared
@@ -1965,6 +1966,7 @@ int32_t AudioDeviceWindowsCore::InitPlayout() {
   if (FAILED(hr)) {
     RTC_LOG(LS_ERROR) << "IAudioClient::Initialize() failed:";
   }
+
   EXIT_ON_ERROR(hr);
 
   if (_ptrAudioBuffer) {
@@ -1982,7 +1984,6 @@ int32_t AudioDeviceWindowsCore::InitPlayout() {
 
   // Get the actual size of the shared (endpoint buffer).
   // Typical value is 960 audio frames <=> 20ms @ 48kHz sample rate.
-  UINT bufferFrameCount(0);
   hr = _ptrClientOut->GetBufferSize(&bufferFrameCount);
   if (SUCCEEDED(hr)) {
     RTC_LOG(LS_VERBOSE) << "IAudioClient::GetBufferSize() => "
@@ -2137,6 +2138,8 @@ int32_t AudioDeviceWindowsCore::InitRecording() {
   WAVEFORMATEX* pWfxIn = NULL;
   WAVEFORMATEXTENSIBLE Wfx = WAVEFORMATEXTENSIBLE();
   WAVEFORMATEX* pWfxClosestMatch = NULL;
+  const int freqs[6] = { 48000, 44100, 16000, 96000, 32000, 8000 };
+  UINT bufferFrameCount(0);
 
   // Create COM object with IAudioClient interface.
   SAFE_RELEASE(_ptrClientIn);
@@ -2174,7 +2177,6 @@ int32_t AudioDeviceWindowsCore::InitRecording() {
   Wfx.Samples.wValidBitsPerSample = Wfx.Format.wBitsPerSample;
   Wfx.SubFormat = KSDATAFORMAT_SUBTYPE_PCM;
 
-  const int freqs[6] = {48000, 44100, 16000, 96000, 32000, 8000};
   hr = S_FALSE;
 
   // Iterate over frequencies and channels, in order of priority
@@ -2271,7 +2273,6 @@ int32_t AudioDeviceWindowsCore::InitRecording() {
 
   // Get the actual size of the shared (endpoint buffer).
   // Typical value is 960 audio frames <=> 20ms @ 48kHz sample rate.
-  UINT bufferFrameCount(0);
   hr = _ptrClientIn->GetBufferSize(&bufferFrameCount);
   if (SUCCEEDED(hr)) {
     RTC_LOG(LS_VERBOSE) << "IAudioClient::GetBufferSize() => "
@@ -2677,6 +2678,12 @@ DWORD AudioDeviceWindowsCore::DoRenderThread() {
   // session.
   //
   UINT32 bufferLength = 0;
+  BYTE* pData = NULL;
+  double endpointBufferSizeMS = 0.f;
+  int playout_delay = 0;
+  REFERENCE_TIME devPeriod = 0;
+  REFERENCE_TIME devPeriodMin = 0;
+
   hr = _ptrClientOut->GetBufferSize(&bufferLength);
   EXIT_ON_ERROR(hr);
   RTC_LOG(LS_VERBOSE) << "[REND] size of buffer       : " << bufferLength;
@@ -2699,8 +2706,6 @@ DWORD AudioDeviceWindowsCore::DoRenderThread() {
   // an audio application can achieve. Typical value: 100000 <=> 0.01 sec =
   // 10ms.
   //
-  REFERENCE_TIME devPeriod = 0;
-  REFERENCE_TIME devPeriodMin = 0;
   _ptrClientOut->GetDevicePeriod(&devPeriod, &devPeriodMin);
   RTC_LOG(LS_VERBOSE) << "[REND] device period        : " << (DWORD)devPeriod
                       << " (" << (double)(devPeriod / 10000.0) << " ms)";
@@ -2708,20 +2713,19 @@ DWORD AudioDeviceWindowsCore::DoRenderThread() {
   // Derive initial rendering delay.
   // Example: 10*(960/480) + 15 = 20 + 15 = 35ms
   //
-  int playout_delay = 10 * (bufferLength / _playBlockSize) +
+  playout_delay = 10 * (bufferLength / _playBlockSize) +
                       (int)((latency + devPeriod) / 10000);
   _sndCardPlayDelay = playout_delay;
   _writtenSamples = 0;
   RTC_LOG(LS_VERBOSE) << "[REND] initial delay        : " << playout_delay;
 
-  double endpointBufferSizeMS =
+  endpointBufferSizeMS =
       10.0 * ((double)bufferLength / (double)_devicePlayBlockSize);
   RTC_LOG(LS_VERBOSE) << "[REND] endpointBufferSizeMS : "
                       << endpointBufferSizeMS;
 
   // Before starting the stream, fill the rendering buffer with silence.
   //
-  BYTE* pData = NULL;
   hr = _ptrRenderClient->GetBuffer(bufferLength, &pData);
   EXIT_ON_ERROR(hr);
 
@@ -3097,12 +3101,19 @@ DWORD AudioDeviceWindowsCore::DoCaptureThread() {
   // session.
   //
   UINT32 bufferLength = 0;
+  REFERENCE_TIME devPeriod = 0;
+  REFERENCE_TIME devPeriodMin = 0;
+  double extraDelayMS = 0.f;
+  double endpointBufferSizeMS = 0.f;
+
   if (_ptrClientIn == NULL) {
     RTC_LOG(LS_ERROR)
         << "input state has been modified before capture loop starts.";
     return 1;
   }
   hr = _ptrClientIn->GetBufferSize(&bufferLength);
+  const UINT32 syncBufferSize = 2 * (bufferLength * _recAudioFrameSize);
+
   EXIT_ON_ERROR(hr);
   RTC_LOG(LS_VERBOSE) << "[CAPT] size of buffer       : " << bufferLength;
 
@@ -3110,7 +3121,6 @@ DWORD AudioDeviceWindowsCore::DoCaptureThread() {
   // It is used for compensation between native 44.1 and internal 44.0 and
   // for cases when the capture buffer is larger than 10ms.
   //
-  const UINT32 syncBufferSize = 2 * (bufferLength * _recAudioFrameSize);
   syncBuffer = new BYTE[syncBufferSize];
   if (syncBuffer == NULL) {
     return (DWORD)E_POINTER;
@@ -3129,16 +3139,14 @@ DWORD AudioDeviceWindowsCore::DoCaptureThread() {
   // Get the length of the periodic interval separating successive processing
   // passes by the audio engine on the data in the endpoint buffer.
   //
-  REFERENCE_TIME devPeriod = 0;
-  REFERENCE_TIME devPeriodMin = 0;
   _ptrClientIn->GetDevicePeriod(&devPeriod, &devPeriodMin);
   RTC_LOG(LS_VERBOSE) << "[CAPT] device period        : " << (DWORD)devPeriod
                       << " (" << (double)(devPeriod / 10000.0) << " ms)";
 
-  double extraDelayMS = (double)((latency + devPeriod) / 10000.0);
+  extraDelayMS = (double)((latency + devPeriod) / 10000.0);
   RTC_LOG(LS_VERBOSE) << "[CAPT] extraDelayMS         : " << extraDelayMS;
 
-  double endpointBufferSizeMS =
+  endpointBufferSizeMS =
       10.0 * ((double)bufferLength / (double)_recBlockSize);
   RTC_LOG(LS_VERBOSE) << "[CAPT] endpointBufferSizeMS : "
                       << endpointBufferSizeMS;
@@ -3946,6 +3954,9 @@ int32_t AudioDeviceWindowsCore::_EnumerateEndpointDevicesAll(
   IPropertyStore* pProps = NULL;
   IAudioEndpointVolume* pEndpointVolume = NULL;
   LPWSTR pwszID = NULL;
+  UINT nChannelCount(0);
+  UINT count = 0;
+  DWORD dwHwSupportMask = 0;
 
   // Generate a collection of audio endpoint devices in the system.
   // Get states for *all* endpoint devices.
@@ -3959,7 +3970,6 @@ int32_t AudioDeviceWindowsCore::_EnumerateEndpointDevicesAll(
 
   // use the IMMDeviceCollection interface...
 
-  UINT count = 0;
 
   // Retrieve a count of the devices in the device collection.
   hr = pCollection->GetCount(&count);
@@ -4027,7 +4037,6 @@ int32_t AudioDeviceWindowsCore::_EnumerateEndpointDevicesAll(
                           << ")  : UNPLUGGED";
 
     // Check the hardware volume capabilities.
-    DWORD dwHwSupportMask = 0;
     hr = pEndpoint->Activate(__uuidof(IAudioEndpointVolume), CLSCTX_ALL, NULL,
                              (void**)&pEndpointVolume);
     CONTINUE_ON_ERROR(hr);
@@ -4048,7 +4057,6 @@ int32_t AudioDeviceWindowsCore::_EnumerateEndpointDevicesAll(
 
     // Check the channel count (#channels in the audio stream that enters or
     // leaves the audio endpoint device)
-    UINT nChannelCount(0);
     hr = pEndpointVolume->GetChannelCount(&nChannelCount);
     CONTINUE_ON_ERROR(hr);
     RTC_LOG(LS_VERBOSE) << "#channels    : " << nChannelCount;

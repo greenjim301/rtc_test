@@ -17,6 +17,8 @@
 #include "media/engine/webrtc_voice_engine.h"
 #include "system_wrappers/include/field_trial.h"
 
+#define HAVE_WEBRTC_VIDEO
+
 #ifdef HAVE_WEBRTC_VIDEO
 #include "media/engine/webrtc_video_engine.h"
 #else

@@ -295,7 +295,7 @@ int32_t AudioDeviceModuleImpl::CreatePlatformSpecificObjects() {
 
   // Dummy ADM implementation.
   if (audio_layer == kDummyAudio) {
-    audio_device_.reset(new AudioDeviceDummy());
+    //audio_device_.reset(new AudioDeviceDummy());
     RTC_LOG(INFO) << "Dummy Audio APIs will be utilized.";
   }
 #endif  // if defined(WEBRTC_DUMMY_AUDIO_BUILD)
